@@ -21,7 +21,7 @@ body{
 div{
     font-family: 'Montserrat', sans-serif;
 }
-/* .hero-image{
+.hero-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/Hero_Images/jonathan-borba-p9OhuSyPW2E-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 a{
     text-decoration: none;
     color: white;
@@ -56,42 +56,25 @@ h2{
 }
 
 /* top nav bar */
+
+.home {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.home > a {
+    padding: 10px 0;
+}
+
+.home > a:hover {
+    color: black;
+    background-color: white;
+}
+
 nav{
     font-size: 24px;
     background-color: rgb(124, 119, 119);
-}
-nav ul{
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-}
-
-nav ul li{
-    padding: 10px;
-    text-align: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-    cursor: pointer;
-    transition: .5s;
-}
-/* 
-nav ul li > a {
-        padding: 20px 75px;
-        margin-right: 5px;
-        flex-grow: 1;
-        flex-shrink: 1;
-        display: flex;
-} */
-
-nav ul li:hover a {
-    color: black;
-}
-
-
-
-nav ul li:hover{
-    color: black;
-    background-color: white;
 }
 
 
