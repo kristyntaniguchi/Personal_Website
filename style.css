@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+:root {
+    --link: white;
+    --linkHover: rgb(87, 100, 109);
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -55,8 +62,10 @@ nav{
 }
 nav ul{
     display: flex;
+    width: 100%;
     list-style-type: none;
 }
+
 nav ul li{
     padding: 10px;
     text-align: center;
@@ -65,12 +74,26 @@ nav ul li{
     cursor: pointer;
     transition: .5s;
 }
-nav ul li a:hover{
+/* 
+nav ul li > a {
+        padding: 20px 75px;
+        margin-right: 5px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        display: flex;
+} */
+
+nav ul li:hover a {
     color: black;
 }
+
+
+
 nav ul li:hover{
+    color: black;
     background-color: white;
 }
+
 
 /* projects page */
 .card-container{
@@ -95,14 +118,14 @@ nav ul li:hover{
     width: 100%;
 }
 .card:hover{
-    background-color: black;
+    background-color: rgb(124, 119, 119);
 }
 .card a{
     text-decoration: none;
     color: black;
 }
 .card a:hover{
-    color: white;
+    color: var(--linkHover);
 }
 
 /* contact page */
@@ -119,11 +142,21 @@ nav ul li:hover{
     align-items: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    transition: color .2s;
+
 }
 
 .contact:hover{
-    color: white
+    color: var(--linkHover);
     
+}
+
+.contact > a {
+    transition: color .2s;
+}
+
+.contact > a:hover{
+    color: var(--linkHover);  
 }
 
 /* About page */
@@ -147,6 +180,9 @@ nav ul li:hover{
     padding-bottom: 50px;
     text-align: center;
     font-weight: bold;
+}
+.about-resume > a:hover{
+    color: var(--linkHover);
 }
 .personal-image{
     width: 250px;
