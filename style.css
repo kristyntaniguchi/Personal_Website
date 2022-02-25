@@ -87,6 +87,7 @@ nav{
     gap: 30px;
     padding: 30px;
 }
+
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;
@@ -102,6 +103,7 @@ nav{
 }
 .card:hover{
     background-color: rgb(124, 119, 119);
+    color: rgb(243, 240, 240);
 }
 .card a{
     text-decoration: none;
@@ -114,6 +116,7 @@ nav{
 /* contact page */
 .contact-container h2{
     padding-bottom: 30px;
+
 }
 .contact-methods{
     padding-bottom: 50px;
