@@ -108,12 +108,12 @@ nav{
     color: black;
 }
 .card a:hover{
-    color: var(--linkHover);
+    color: rgb(243, 240, 240);
 }
 
 /* contact page */
 .contact-container h2{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 .contact-methods{
     padding-bottom: 50px;
@@ -130,7 +130,7 @@ nav{
 }
 
 .contact:hover{
-    color: var(--linkHover);
+    color: rgb(156, 150, 150);
     
 }
 
