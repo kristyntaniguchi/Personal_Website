@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-:root {
-    --link: white;
-    --linkHover: rgb(87, 100, 109);
-}
-
-
 
 *{
     margin: 0;
@@ -60,7 +54,7 @@ h2{
 .home {
     display: grid;
     grid-template-columns: auto auto auto auto;
-
+    font-weight: bold;
 }
 
 .home > a {
@@ -70,6 +64,7 @@ h2{
 .home > a:hover {
     color: black;
     background-color: white;
+    transition: .5s;
 }
 
 nav{
@@ -79,37 +74,46 @@ nav{
 
 
 /* projects page */
+.project{
+    
+}
 .card-container{
-    margin: 0 auto;
     max-width: 1000px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: auto;
     text-align: center;
     transition: .5s;
     background-color: rgb(243, 240, 240);
     font-weight: bold;
     cursor: pointer;
     padding: 10px;
+    border-radius: 10px;
 }
 .card-image{
     width: 100%;
+    border-radius: 10px;
+    margin: auto;
 }
 .card:hover{
     background-color: rgb(124, 119, 119);
     color: rgb(243, 240, 240);
+    transition: .5s;
 }
-.card a{
+.card > a{
     text-decoration: none;
     color: black;
 }
-.card a:hover{
+.card > a:hover{
+    transition: .5s;
     color: rgb(243, 240, 240);
 }
 
@@ -133,16 +137,13 @@ nav{
 }
 
 .contact:hover{
-    color: rgb(156, 150, 150);
+    color: black;
     
 }
 
-.contact > a {
-    transition: color .2s;
-}
-
 .contact > a:hover{
-    color: var(--linkHover);  
+    color: black; 
+    transition: .5s;
 }
 
 /* About page */
@@ -152,8 +153,7 @@ nav{
 }
 
 .about-info p{
-    margin: 30px;
-    padding-right: 40px;
+    margin-left: 30px;
 }
 .about{
     display: flex;
@@ -161,6 +161,8 @@ nav{
     align-items: center;
     color: white;
     background-color: rgb(124, 119, 119);
+    margin: 60px;
+    min-width: auto;
 }
 .about-resume{
     padding-bottom: 50px;
@@ -168,11 +170,13 @@ nav{
     font-weight: bold;
 }
 .about-resume > a:hover{
-    color: var(--linkHover);
+    color: black;
+    transition: .5s;
 }
 .personal-image{
-    width: 250px;
-    padding-left: 50px;
+    width: 100%;
+    min-width: 200px;
+    border-radius: 10%;
 }
 /* footer */
 footer{
